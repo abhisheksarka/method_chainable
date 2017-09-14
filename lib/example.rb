@@ -8,11 +8,15 @@ class Example
     def decrement(n)
       return n-1
     end
+
+    def mult_by_2(n)
+      n*2
+    end
   end
 end
 
-Example.chain(10).increment.increment.value # 12
+Example.chain(10).increment.increment.val # 12
 
-Example.chain(10).decrement.decrement.value # 8
+Example.chain(10).decrement.decrement.val # 8
 
-Example.chain(10).increment.decrement.value # 10
+Example.chain(10).increment.decrement.val # 10

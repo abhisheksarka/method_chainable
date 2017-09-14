@@ -40,8 +40,8 @@ end
 s = Simpleton.new
 s.bar(s.foo) # FooBar
 
-# With chaining(You should call .value to get the final result)
-Simpleton.new.chain.foo.bar.value # FooBar
+# With chaining(You should call .val to get the final result)
+Simpleton.new.chain.foo.bar.val # FooBar
 ```
 
 ## Contributing

@@ -34,14 +34,14 @@ module MethodChainable
       m = m.to_s
 
       # Return the final output if value is called
-      if m == 'value'
+      if m == 'val'
         return output
       else
 
         # Since value is not called yet keep calling
         # the actual method on chainable and pass
         # the previous output
-        
+
         if m_chainable.respond_to? m
           arg = (@m_chain_count == 0) ? input : output
           arity = m_chainable.method(m).arity
