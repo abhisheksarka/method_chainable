@@ -20,7 +20,12 @@ module MethodChainable
         if m_chainable.respond_to? m
           arg = (@m_chain_count == 0) ? input : output
 
-          @output = m_chainable.send(m, arg)
+          if args.count > 0
+            @output = m_chainable.send(m, arg)
+          else
+            @output = m_chainable.send(m)
+          end
+          
           @m_chain_count += 1
 
           return self
