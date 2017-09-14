@@ -14,3 +14,5 @@ class Example
     end
   end
 end
+
+Example.chain.hello.space.world.value
