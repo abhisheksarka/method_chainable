@@ -1,6 +1,6 @@
 # Method Chainable
 
-The idea here is easy chaining of methods on classes or objects in Ruby
+The idea here is easy chaining of methods on classes or objects in Ruby. Primarily it routes output from one method to the next
 ![Screenshot](https://image.ibb.co/miSA9Q/chain_link_hi.png)
 
 ## Installation
@@ -40,9 +40,8 @@ end
 s = Simpleton.new
 s.bar(s.foo) # FooBar
 
-# With chaining
-Simpleton.new.chain.foo.bar # FooBar
-
+# With chaining(You should call .value to get the final result)
+Simpleton.new.chain.foo.bar.value # FooBar
 ```
 
 ## Contributing
