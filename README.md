@@ -1,6 +1,7 @@
 # MethodChainable
 
-TODO: Write a gem description
+The idea here is easy chaining of methods on classes or objects in Ruby
+![Screenshot](https://image.ibb.co/miSA9Q/chain_link_hi.png)
 
 ## Installation
 
