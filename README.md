@@ -21,7 +21,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Consider this simple example
+
+```ruby
+class Simpleton
+  include MethodChainable
+
+  def foo
+    'Foo'
+  end
+
+  def bar(n)
+    n + 'Bar'
+  end
+end
+
+# Without chaining
+s = Simpleton.new
+s.bar(s.foo) # FooBar
+
+# With chaining
+Simpleton.new.chain.foo.bar # FooBar
+
+```
 
 ## Contributing
 
