@@ -1,5 +1,8 @@
 require "method_chainable/version"
+require "method_chainable/proxy"
 
 module MethodChainable
-  # Your code goes here...
+  def chain(input)
+    MethodChainable::Proxy.new(self, input)
+  end
 end
