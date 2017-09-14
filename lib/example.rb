@@ -1,18 +1,18 @@
 class Example
   extend MethodChainable
   class << self
-    def hello
-      'hello'
+    def increment(n)
+      return n+1
     end
 
-    def space(s)
-      s + ' '
-    end
-
-    def world(s)
-      s + 'world'
+    def decrement(n)
+      return n-1
     end
   end
 end
 
-Example.chain.hello.space.world.value
+Example.chain(10).increment.increment.value # 12
+
+Example.chain(10).decrement.decrement.value # 8
+
+Example.chain(10).increment.decrement.value # 10
