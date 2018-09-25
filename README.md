@@ -1,7 +1,7 @@
 # Method Chainable
 
 The idea here is easy chaining of methods on classes or objects in Ruby. Primarily it routes output from one method to the next
-![Screenshot](https://image.ibb.co/miSA9Q/chain_link_hi.png)
+![Screenshot](https://cdn2.iconfinder.com/data/icons/party-new-years/128/Party_Newyears_Flag_Chain-512.png)
 
 ## Installation
 
